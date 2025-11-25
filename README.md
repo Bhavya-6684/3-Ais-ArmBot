@@ -69,3 +69,79 @@ C++ code controls the servo angles received from the web app.
 🌐 Web Controller
 
 HTML, CSS & JavaScript create a real-time control panel with sliding inputs to adjust servo angles.
+
+✅ 1. Power Connections (Common for All Servos)
+
+Each SG90 servo has 3 wires:
+
+Servo Wire Color	Connect To
+Red (VCC)	5V on Arduino
+Brown/Black (GND)	GND on Arduino
+
+⚠️ Important:
+All servos must share the same GND as the Arduino.
+
+✅ 2. Signal Pin Connections (Based on Your Code)
+Servo s1 → Arduino Pin 9
+
+Servo 1 signal wire (Orange/Yellow) → Pin 9
+
+Power: Red → 5V
+
+Ground: Brown/Black → GND
+
+Servo s2 → Arduino Pin 10
+
+Servo 2 signal wire → Pin 10
+
+Power: Red → 5V
+
+Ground: Brown/Black → GND
+
+Servo s3 → Arduino Pin 11
+
+Servo 3 signal wire → Pin 11
+
+Power: Red → 5V
+
+Ground: Brown/Black → GND
+
+🧩 Breadboard Layout (Simple Version)
+
+You can make wiring cleaner using a breadboard:
+
+5V Line
+
+Connect Arduino 5V → breadboard red rail
+
+Connect all servo red wires → same red rail
+
+GND Line
+
+Connect Arduino GND → breadboard blue rail
+
+Connect all servo brown/black wires → same blue rail
+
+Signal Wires
+
+Servo 1 signal → pin 9
+
+Servo 2 signal → pin 10
+
+Servo 3 signal → pin 11
+
+🔧 Final Checklist
+
+ Servo 1 → Signal to 9
+
+ Servo 2 → Signal to 10
+
+ Servo 3 → Signal to 11
+
+ All servo red wires → 5V
+
+ All servo brown/black wires → GND
+
+ Arduino and servo grounds are common
+
+ USB connected to PC for serial communication
